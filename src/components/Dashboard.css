@@ -1,0 +1,121 @@
+/* src/components/Dashboard.css */
+.dashboard {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width:100vw;
+  overflow:hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../assets/background.jpg') no-repeat center center/cover;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #a36c6c;
+  padding: 1rem;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: #a97474;
+  color: white;
+  text-align: left;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.sidebar li:hover {
+  background-color: #8c5f5f;
+}
+
+.sidebar li.active {
+  background-color: #6e4a4a;
+  font-weight: bold;
+}
+
+.sidebar .bottom-controls {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  color: white;
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./images.jpeg') no-repeat center center/cover;
+  position:relative;
+  padding: 2rem;
+  overflow-y: auto;
+}
+.notification-wrapper {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.notification-icon {
+  position: relative;
+  cursor: pointer;
+  color: white;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.notification-dropdown {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-color: rgba(50, 50, 50, 0.95);
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 8px;
+  min-width: 220px;
+  z-index: 1001;
+}
+
+.notification-item {
+  padding: 8px 12px;
+  border-bottom: 1px solid #555;
+  font-size: 0.95rem;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+

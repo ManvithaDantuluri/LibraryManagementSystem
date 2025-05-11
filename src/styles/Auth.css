@@ -1,0 +1,68 @@
+/* Auth.css */
+.auth-background {
+  background-image: url('/background.jpg'); /* use same path as login */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.auth-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.auth-form input::placeholder {
+  color: #ccc;
+}
+
+.auth-form button {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-form button:hover {
+  background-color: #e6e6e6;
+}
+
+.auth-box p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.auth-box a {
+  color: #00aaff;
+  text-decoration: none;
+}

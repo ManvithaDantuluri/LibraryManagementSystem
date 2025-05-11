@@ -1,0 +1,49 @@
+.notification-wrapper {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  margin-right: 20px;
+  cursor: pointer;
+  z-index:100;
+}
+
+.notification-icon {
+  font-size: 20px;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: red;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #333;
+  color: white;
+  min-width: 250px;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  padding: 0.5rem;
+}
+
+.notification-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #555;
+}
+.notification-item:last-child {
+  border-bottom: none;
+}
